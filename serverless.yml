@@ -1,13 +1,13 @@
-service: serverless-lambda-chrome
+service: serverless-pdf-generator
 frameworkVersion: "1.60.5"
 
 provider:
   name: aws
   versionFunctions: false
   runtime: nodejs12.x
-  region: ap-southeast-2
-  stage: dev
-  profile: hotpuma
+  region: us-east-1
+  stage: production
+  profile: default
   environment:
     IS_OFFLINE: ${opt:offline}
   apiGateway:
@@ -38,19 +38,19 @@ custom:
     location: .webpack/service
 
   customDomain:
-    domainName: labs.mianio.com
-    basePath: demo
+    domainName: pdf.idbi.pe
+    basePath: ''
     stage: ${self:provider.stage}
-    createRoute53Record: true
+    createRoute53Record: false
 
 functions:
-  generate-the-pdf:
-    provisionedConcurrency: 2
+  generate:
+    provisionedConcurrency: 3
     handler: functions/pdf.generate
     layers:
       - { Ref: HeadlessChromeLambdaLayer }
     events:
       - http:
-          path: puppeteer/pdf
-          method: get
+          path: ''
+          method: post
           cors: true
