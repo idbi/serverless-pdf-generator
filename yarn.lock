@@ -4899,10 +4899,10 @@ serialize-javascript@^2.1.2:
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-2.1.2.tgz#ecec53b0e0317bdc95ef76ab7074b7384785fa61"
   integrity sha512-rs9OggEUF0V4jUSecXazOYsLfu7OGK2qIn3c7IPBiffz32XniEp/TX9Xmc9LQfK2nQ2QKHvZ2oygKUGU0lG4jQ==
 
-serverless-domain-manager@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/serverless-domain-manager/-/serverless-domain-manager-3.3.0.tgz#758b928f5a146b3e925e5cd9d6e0043879805eee"
-  integrity sha512-oGZDNzI/Y15QusC/E+Zm6VaXoAwnbQnm6e6wyXPFDi1Sqoeo8xarKNj0fZODhEf4DKggAqxVfkiXjhuC8yZu0Q==
+serverless-domain-manager@^3.3.*:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/serverless-domain-manager/-/serverless-domain-manager-3.3.1.tgz#2814b46e897369b7f0142c411a56ab6317fdb897"
+  integrity sha512-IpxGPUUUmUgYI8iPRXz8egKIYn3M8bpOjJyuzNoeb3PvKncVLMl435nUUBHSxoIqif2WRlwebL6Ri5FTl9Kulg==
   dependencies:
     aws-sdk "^2.490.0"
     chalk "^2.4.1"
