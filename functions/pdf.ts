@@ -49,11 +49,13 @@ const parseHtml = async (html: string) => {
 
 const parseUrl = async (url: string) => {
     const page = await browser.newPage();
-    await page.goto(url);
-  return generatePdfFromPage(page);
+    await page.goto(url, {
+        waitUntil: 'networkidle0',
+    });
+    return generatePdfFromPage(page);
 };
 
-const generatePdfFromPage = (page) => {
+const generatePdfFromPage = async (page) => {
     const configPdf = {
         format: 'A4',
         printBackground: true,

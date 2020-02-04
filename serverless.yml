@@ -1,5 +1,5 @@
 service: serverless-pdf-generator
-frameworkVersion: "1.62.*"
+frameworkVersion: "1.60.5"
 
 provider:
   name: aws
@@ -38,7 +38,7 @@ custom:
   customDomain:
     domainName: generator.idbi.pe
     stage: ${self:provider.stage}
-    basePath: prod
+    basePath: ''
     certificateName: 'idbi.pe'
     createRoute53Record: true
     endpointType: 'edge'
