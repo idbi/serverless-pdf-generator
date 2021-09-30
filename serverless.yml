@@ -36,7 +36,7 @@ custom:
     location: .webpack/service
 
   customDomain:
-    domainName: generator.idbi.pe
+    domainName: pdf-generator.idbi.pe
     stage: ${self:provider.stage}
     basePath: ''
     certificateName: 'idbi.pe'
