@@ -15,7 +15,7 @@
     "chrome-aws-lambda": "^2.0.2",
     "puppeteer": "^2.0.0",
     "puppeteer-core": "^2.0.0",
-    "serverless": "1.60.5",
+    "serverless": "3.25.1",
     "serverless-offline": "v6.0.0-alpha.64"
   },
   "devDependencies": {
