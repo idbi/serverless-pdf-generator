@@ -16,7 +16,7 @@
     "puppeteer": "^2.0.0",
     "puppeteer-core": "^2.0.0",
     "serverless": "1.60.5",
-    "serverless-offline": "v6.0.0-alpha.64"
+    "serverless-offline": "v12.0.4"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.39",
